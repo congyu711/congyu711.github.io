@@ -30,4 +30,4 @@ categories: github page
 我觉得这样就能用了。
 
 
-![](https://github.com/congyu711/congyu711.github.io/blob/master/docs/image/%D0%93%D0%BE%D1%80%D0%B0_%D0%93%D0%BE%D0%B2%D0%B5%D1%80%D0%BB%D0%B0_%D0%BF%D1%96%D1%81%D0%BB%D1%8F_%D0%B7%D0%B0%D1%85%D0%BE%D0%B4%D1%83_%D1%81%D0%BE%D0%BD%D1%86%D1%8F.jpg)
+![有帮助的截图]({{https://congyu711.github.io}}/assets/image/acd.jpg)
