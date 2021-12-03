@@ -8,7 +8,7 @@ categories: reachability
 在读的文章
   
 
-# [A Fully Dynamic Reachability Algorithm for Directed Graphs with an Almost Linear Update Time](https://dl.acm.org/doi/pdf/10.1145/1007352.1007387)
+[A Fully Dynamic Reachability Algorithm for Directed Graphs with an Almost Linear Update Time](https://dl.acm.org/doi/pdf/10.1145/1007352.1007387)
   
 
 
@@ -48,7 +48,7 @@ $H_i$中的边是$G_i$中的SCC里面的边，并且要么在$G_{i-1}$中没有�
 
 用两个数组parent和version来记录森林中每个节点的父亲和最早出现的版本（version记录最早那一次插入操作后出现了这个scc）。  
 
-现在要查询$G_i$中的两个点u,v是否在同一个SCC中，只需要在森林中查找u,v的LCA，如果version[LCA]小于等于i，说明u,v在同一个SCC中。 (存在LCA说明在同一棵树，在某个版本u,v是在一个SCC中的，这个版本就是version[LCA])
+现在要查询$G_i$中的两个点u,v是否在同一个SCC中，只需要在森林中查找u,v的LCA，如果version[LCA]小于等于i，说明u,v在同一个SCC中。（存在LCA说明在同一棵树，在某个版本u,v是在一个SCC中的，这个版本就是version[LCA]）
 
 文中要使用[tarjan的LCA算法](https://dl.acm.org/doi/abs/10.1145/800061.808753)均摊$O(1)$的单次询问和$O(n)$预处理（并查集仅使用路径压缩）。  
 
@@ -70,4 +70,5 @@ of $H_t$ edges with respect to the components of $G_{t−1}$.
 5. move edges which shouldn't in $H_t$ to $H_{t+1}$
 6. preprocess LCA
 
-目前我只读到这里，但是时间有点久了，快期末了事情多，先挂上来
+Delete:
+
