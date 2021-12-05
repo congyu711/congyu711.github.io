@@ -34,7 +34,7 @@ $G_1,G_2,...,G_t$的所有SCC(不同G中相同SCC只记录一个)可以构成森
 The parent of a component w in
 the forest is the smallest component that strictly contains w.  
 
-下面提出一个edeg partition 的概念用来维护上述森林。
+下面提出一个edge partition 的概念用来维护上述森林。
 
 
 ### Dynamic edge partitioning:  
@@ -141,8 +141,10 @@ reachability tree 要保持这样的结构：
 接下来只描述一下思想。
 
 在 Identify and Report Decompositions of SCC 部分我们能得到任意一个SCC在 delete 操作之后会被 split 成新图中的哪些SCC。
+
 $$w\rightarrow \{w_1,w_2,...,w_j,...,w_l\}$$
-可以得到一个被分裂出来的SCC的大小$O(1)$和里面有哪些点$O(|w_j|)$。
+
+可以得到一个被分裂出来的SCC的大小$O(1)$和里面有哪些点$O(\|w_j\|)$。
 
 可以得到那些边从 intra-component 变成 inter-component.(比如被分开的SCC是$G_i$中的，那么这一步找到的改变状态的边就是$H_i$中被删除的边，根据 dynamic edge partitioning 中$H_i$的定义)
 
@@ -160,3 +162,44 @@ $\{w_1,w_2,...,w_j,...,w_l\}$中每个SCC的active链表中的点有两部分。
 不是很懂为什么size会减半，复杂度为什么是O(nlogn)
 
 接下来 Reconnecting the tree after edge deletions
+
+>Let W be a set containing all the new components with no incoming tree edge, and all the old components that lost their incoming tree edges. (If the root r is contained in a new component, this new component is not added to W.) The set W can be easily constructed in O(\|W\|) time.
+
+删除一些边之后，原来的reachability tree可能会变成森林。森林中的树根显然就是W中的SCC（根据定义）（也有可能是r现在所在的SCC，r原来所在的SCC因为删边被破坏了）。
+
+现在，我们想把W中的这些树根连起来，重新组合成r的 reachability tree
+
+很容易想到利用上面早已构造好的 active 链表和 in 链表。
+
+1. $\text{ for each }w \in W$
+2. $\quad \text{for each }u\in active[w]$
+3. $\quad \quad \text{for each }v\in in[u]$
+4. $\quad \quad \quad \text{if } active[SCCNO[v]]!=null\text{ or }SCCNO[v]==SCCNO[r]$
+5. $\quad \quad \quad \quad \text{remove w from W, this edge is a tentative tree edge}$
+6. $\quad \quad \quad \text{else}$
+7. $\quad \quad \quad \quad \text{remove that edge}$
+
+
+A vertex v whose list in[v] becomes empty ceases to be active and is removed from active[w].
+
+如果在检查w的入边是否符合要求的时候发现并没有入边能符合要求，显然他是真的不行了，删边之后不会进入新的 reachability tree 了。但是还是要维护一下他的能到达的SCC（下面解释原因）。遍历他的出边（out[v]，v是w中的点)，如果out[v]中有边(v,u) 是 tentative tree edge，那需要把u所在的SCC加入W中。
+
+这样做的原因：上面的标记 tentative tree edge 的步骤并没有考虑顺序，可能一些本来应该在新的 reachability tree 中的SCC直接连接到了某个已经不会在 reachability tree 里的SCC上面。为了防止漏掉SCC，要把不回进入新的 reachability tree 的SCC的 tentative tree edge 连接到的SCC重新加入W。
+
+## AN ALMOST LINEAR FULLY DYNAMIC REACHABILITY ALGORITHM
+
+支持的操作：
+
+1. 插入：插入一些边（起始点或结束点都为同一个点）
+2. 删除：删除任意边集
+3. 询问：是否存在从u到v的路径
+   
+每次插入操作都会围绕一个中心点v，那就为v建立两棵 reachability tree，分别保存v能到达的点和能到达v的点（也相当于在原图和反图上建立上文的 reachability tree）这也是为什么上文 reachability tree 只需要处理删除操作。
+
+查询是否存在从u到v的路径：检查是否存在这样一个w，使得u可以到达w（$u\in T_{in}[w]$），而且w可以到达v（$v\in T_{out}[w]$）.
+这可以在$O(n)$的时间内查找到。???
+
+我思考了一下，不知道为何能在$O(n)$回答询问。最坏情况要查找n个w，在reachability tree中并不能在常数时间内回答树中是否存在某个点。有点迷惑。
+
+
+周末花了很长时间来读这个，感觉太长了，我对动态图上的reachability问题或者他的算法都没什么想法。。。也没有完全理解。
