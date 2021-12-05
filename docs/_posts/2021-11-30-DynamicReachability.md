@@ -152,7 +152,7 @@ $\{w_1,w_2,...,w_j,...,w_l\}$中每个SCC的active链表中的点有两部分。
 
 首先第二部分的点可以在更改边的状态时直接解决，这里不讨论。
 
-第一部分的点有这样的做法。假设$\{w_1,w_2,...,w_j,...,w_l\}$中这些SCC的大小是递减的。首先构建$w_1$的active list，遍历$w$的active list中的点，把其中不属于a的都移动到其他某个$w_k$的active list中（注意分成的SCC是不可能有交集的）（这一步需要$O(\sum_{j=2}^{l}|w_j|)$。
+第一部分的点有这样的做法。假设$\{w_1,w_2,...,w_j,...,w_l\}$中这些SCC的大小是递减的。首先构建$w_1$的active list，遍历$w$的active list中的点，把其中不属于a的都移动到其他某个$w_k$的active list中（注意分成的SCC是不可能有交集的）（这一步需要$O(\sum_{j=2}^{l}\|w_j\|)$。
 
 下面文中说：
 >This makes a huge difference! If a vertex is moved from one active list to another, the size of the component containing it must have decreased by a factor of at least 2. Each vertex is therefore moved at most $\log_2n$ times and the total amount of time spent on constructing these lists is at most O(n log n).
