@@ -159,7 +159,9 @@ $\{w_1,w_2,...,w_j,...,w_l\}$中每个SCC的active链表中的点有两部分。
 下面文中说：
 >This makes a huge difference! If a vertex is moved from one active list to another, the size of the component containing it must have decreased by a factor of at least 2. Each vertex is therefore moved at most $\log_2n$ times and the total amount of time spent on constructing these lists is at most O(n log n).
 
-不是很懂为什么size会减半，复杂度为什么是O(nlogn)
+~~~不是很懂为什么size会减半，复杂度为什么是O(nlogn)~~~
+
+我的理解出现了问题，，，通过不断分解来把点塞到更小的SCC里面。每次需要O(n)的时间来判断原来SCC中一个active的点该放到哪个分裂出的SCC中，SCC最多需要logn次就会变成点，因此是at most O(n log n).
 
 接下来 Reconnecting the tree after edge deletions
 
@@ -199,7 +201,4 @@ A vertex v whose list in[v] becomes empty ceases to be active and is removed fro
 查询是否存在从u到v的路径：检查是否存在这样一个w，使得u可以到达w（$u\in T_{in}[w]$），而且w可以到达v（$v\in T_{out}[w]$）.
 这可以在$O(n)$的时间内查找到。???
 
-我思考了一下，不知道为何能在$O(n)$回答询问。最坏情况要查找n个w，在reachability tree中并不能在常数时间内回答树中是否存在某个点。有点迷惑。
-
-
-周末花了很长时间来读这个，感觉太长了，我对动态图上的reachability问题或者他的算法都没什么想法。。。也没有完全理解。
+我思考了一下，不知道为何能在$O(n)$回答询问。最坏情况要查找n个w，在reachability tree中并不能在常数时间内回答树中是否存在某个点。有点迷惑。insert操作的更新是重新构建一个 reachability tree ，如果两棵树上存在同一个节点，能不能保证他们的子树是相同的？如果能，图中所有不同的SCC的级别难道不是O(nlogn)吗？
