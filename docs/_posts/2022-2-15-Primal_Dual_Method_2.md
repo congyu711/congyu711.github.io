@@ -11,19 +11,19 @@ assignment problem (minimum-weight perfect matching problem in bipartite graphs)
 
 integer program:
 
-![example_IP]({{https://congyu711.github.io}}/assets/image/primal-dual/example_IP.png)
+![example_IP]({{url}}/assets/image/primal-dual/example_IP.png)
 
 可以证明IP的线性松弛最优解是整数解。
 
 dual of LP relaxation:
 
-![example_dual_LP]({{https://congyu711.github.io}}/assets/image/primal-dual/example_dual_LP.png)
+![example_dual_LP]({{url}}/assets/image/primal-dual/example_dual_LP.png)
 
 primal-dual 要从一个对偶问题的可行解开始。取$u=v=0$
 
 restricted primal:
 
-![rp]({{https://congyu711.github.io}}/assets/image/primal-dual/rp.png)
+![rp]({{url}}/assets/image/primal-dual/rp.png)
 
 $I=\emptyset,J=\\{(a,b)\in E: u_a+v_b=c_{ab}\\}$
 
@@ -33,7 +33,7 @@ $I=\emptyset,J=\\{(a,b)\in E: u_a+v_b=c_{ab}\\}$
 那么对于任意一个对偶问题的解，我们都能写出restricted primal问题，而restriced primal问题就是求一个二分图的最大匹配。
 如果找到的最大匹配是一个完美匹配，可以发现restricted primal的目标函数值为0，说明找到了最优解，否则，继续写出restricted primal的对偶：
 
-![dualofrp]({{https://congyu711.github.io}}/assets/image/primal-dual/dualofrp.png)
+![dualofrp]({{url}}/assets/image/primal-dual/dualofrp.png)
 
 二分图上Maximum matching 的对偶实际上是 vertex cover，
 在这里u取-1表示选择了这个点，取1表示没选这个点，max u恰好是在求最小顶点覆盖

@@ -14,15 +14,26 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      <script> 
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$']]}
+        });
+      </script>
+      <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+      <!-- <script>
         MathJax = {
-          tex: {
-            inlineMath: [['$', '$']],
-            processEscapes: true
-          }
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            chtml: {
+                scale: 1
+            },
+            svg: {
+                scale: 1
+            }
         };
-        </script>
+      </script> -->
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

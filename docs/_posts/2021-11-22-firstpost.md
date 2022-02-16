@@ -30,4 +30,4 @@ categories: github page
 我觉得这样就能用了。
 
 
-![有帮助的截图]({{https://congyu711.github.io}}/assets/image/acd.jpg)
+![有帮助的截图]({{url}}/assets/image/acd.jpg)
