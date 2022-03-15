@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Primal Dual Method 5"
-date:   2022-2-27 12:30:08 +0800
+date:   2022-3-15 12:30:08 +0800
 categories: alg
 ---
 
@@ -23,5 +23,10 @@ primal-dual近似比最好也只能做到logn级别了，但是最短路的hitti
 我发现大概这个整数规划约束有指数多个，一般整数规划和线性松弛差的不大。
 
 
+
+对比The primal-dual method for approximation algorithms and its application to network design problems, chapter 4这个章节和The Design of Approximation Algorithms chapter 7，
+明显后者更加简单易懂，使用了很多例子，但是我觉得前者要系统很多，而且更加符合逻辑和直觉。首先介绍什么是classic primal-dual method，从这个方法出发有了设计近似算法的基本框架，如何从整数规划的线性松弛和LP的对偶
+找到原问题（IP）的可行解，以及后面对用hitting set建模抽象出来的函数$f(S)$的讨论，而后者通过众多例子介绍了primal-dual，比较易懂，但是关键部分的近似比证明受例子的影响，没有一般化，感觉很难想到。
+
 根据之前看的两本书，做了ppt.
-<object data="{{url}}/assets/pdf/primal-dual_method.pdf" width="1000" height="1000" type='application/pdf'/>
+<object data="{{url}}/assets/pdf/primal-dual_method.pdf" width="100%" height="1000" type='application/pdf'>
