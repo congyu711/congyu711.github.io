@@ -29,4 +29,6 @@ primal-dual近似比最好也只能做到logn级别了，但是最短路的hitti
 找到原问题（IP）的可行解，以及后面对用hitting set建模抽象出来的函数$f(S)$的讨论，而后者通过众多例子介绍了primal-dual，比较易懂，但是关键部分的近似比证明受例子的影响，没有一般化，感觉很难想到。
 
 根据之前看的两本书，做了ppt.
-<object data="{{url}}/assets/pdf/primal-dual_method.pdf" width="100%" height="1000" type='application/pdf'>
+
+
+[primal-dual-2]({{url}}/../../assets/pdf/primal-dual_method.pdf)
