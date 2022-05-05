@@ -37,6 +37,7 @@ categories: alg
 
 这个限制使得用一个$\mathcal{O}(n^2)$的dp就能算出一侧的最优解，因此大概是损失了很多信息，可能会比最优解差很多
 
-我目前想把限制变宽，但是仍保持一侧的OPT在多项式时间内可解
+我目前想:
 
-想到再回来写
+1. 读一下[Convergence of Local Search](https://www.sstich.ch/files/Stich12-trash12.pdf)如果可以收敛到最优解当然很好
+2. 把限制变宽，但是仍保持一侧的OPT在多项式时间内可解，不容易掉到局部最优解当中去
