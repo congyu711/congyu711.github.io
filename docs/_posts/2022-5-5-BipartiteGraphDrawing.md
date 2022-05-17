@@ -46,7 +46,7 @@ categories: alg
 ### one side local search
 
 固定一侧找另一侧最优解的local search不能找到最优解
-![ex2]({{url}}/assets/image/../../../../assets/image/bipartitedrawingcounterexample.png)
+![ex2]({{url}}/assets/image/../../../../assets/image/bipartitedrawing_counterexample.png)
 
 上图中固定任意一侧，另外一侧都已经达到最优解，但是下图说明更改中间两个点的位置可以让交叉只有两个。
 
