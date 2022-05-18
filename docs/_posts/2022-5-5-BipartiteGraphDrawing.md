@@ -43,11 +43,20 @@ categories: alg
 2. 把限制变宽，但是仍保持一侧的OPT在多项式时间内可解，不容易掉到局部最优解当中去 -- 还在想
 3. 观察到样例的平均度数都很小
 
-### one side local search
+### 3 one side local search
 
 固定一侧找另一侧最优解的local search不能找到最优解
 ![ex2]({{url}}/assets/image/../../../../assets/image/bipartitedrawing_counterexample.png)
 
 上图中固定任意一侧，另外一侧都已经达到最优解，但是下图说明更改中间两个点的位置可以让交叉只有两个。
 
-类似的构造应该可以说明这种local search的近似比没有保证
+类似的构造应该可以说明这种 local search 的近似比没有保证
+
+#### (5/18)
+
+另外我觉得固定一侧找另一侧最优解应该也是 NP-Hard 
+
+大概类似[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)证明 bipartite crossing的方法，从 linear arrangement 归约，考虑一个linear arrangement问题，构造二分图，用类似栅栏的形状来让一侧的点无法移动，然后把linear arrangement 的点插入到另一侧，连边。
+
+![ex2]({{url}}/../../assets/image/bipartitedrawing_ex2.JPG) 没有编号的点形成栅栏形状，并且连$\|E\|^2$条边，来确保下半部分点无法改变顺序(移动之后会产生至少$\|E\|^4$条边)，有编号的点对应 linear arrangement的点，原来的限制是$k$，新的二分图上限制是$(2k-\|E\|)*\|E\|^2+\binom{\|E\|}{2}$，完全类似bipartite crossing的证明方法。(我觉得大概没问题)
+
