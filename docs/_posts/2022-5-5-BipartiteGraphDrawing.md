@@ -54,9 +54,18 @@ categories: alg
 
 #### (5/18)
 
-另外我觉得固定一侧找另一侧最优解应该也是 NP-Hard 
+~~另外我觉得固定一侧找另一侧最优解应该也是 NP-Hard ~~
 
-大概类似[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)证明 bipartite crossing的方法，从 linear arrangement 归约，考虑一个linear arrangement问题，构造二分图，用类似栅栏的形状来让一侧的点无法移动，然后把linear arrangement 的点插入到另一侧，连边。
+~~大概类似[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)证明 bipartite crossing的方法，从 linear arrangement 归约，考虑一个linear arrangement问题，构造二分图，用类似栅栏的形状来让一侧的点无法移动，然后把linear arrangement 的点插入到另一侧，连边。~~
 
-![ex2]({{url}}/../../assets/image/bipartitedrawing_ex2.JPG) 没有编号的点形成栅栏形状，并且连$\|E\|^2$条边，来确保下半部分点无法改变顺序(移动之后会产生至少$\|E\|^4$条边)，有编号的点对应 linear arrangement的点，原来的限制是$k$，新的二分图上限制是$(2k-\|E\|)*\|E\|^2+\binom{\|E\|}{2}$，完全类似bipartite crossing的证明方法。(我觉得大概没问题)
+![ex2]({{url}}/../../assets/image/bipartitedrawing_ex2.JPG) ~~没有编号的点形成栅栏形状，并且连$\|E\|^2$条边，来确保下半部分点无法改变顺序(移动之后会产生至少$\|E\|^4$条边)，有编号的点对应 linear arrangement的点，原来的限制是$k$，新的二分图上限制是$(2k-\|E\|)*\|E\|^2+\binom{\|E\|}{2}$，完全类似bipartite crossing的证明方法。(我觉得大概没问题)~~
 
+(5/19)
+
+有大问题，完全错误，实际上甚至不是NP的，还是用上面那种逆序对的思路来看，相当于给定一个由集合构成的序列，排列集合的顺序，使得每个集合内的元素顺序排列直接展开集合之后的逆序对最少，比如：
+
+```{1,2,3},{1,3,4}``` 展开成```1,2,3,1,3,4```，逆序对一共2个
+
+```{1,3,4},{1,2,3}``` 展开成```1,3,4,1,2,3```，逆序对一共5个
+
+但是跟同学讨论了一下，同学告诉我这是一个排序问题。。任意两个相邻的集合可以判断出前后顺序，这大概比上面论文的dp要好。。。
