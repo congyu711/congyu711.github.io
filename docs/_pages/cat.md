@@ -12,7 +12,7 @@ title: categories
     <hr/>
     <div class="tags-expo-section">
       {% for tag in site.categories %}
-      <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
+      <h3 id="{{ tag[0] | slugify }}">#{{ tag | first }}</h3>
       <ul class="tags-expo-posts">
          {%- for post in tag[1] -%}
       <li>
