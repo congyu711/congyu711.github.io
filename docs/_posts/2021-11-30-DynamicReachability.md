@@ -2,7 +2,7 @@
 layout: post
 title:  "A Fully Dynamic Reachability Algorithm for Directed Graphs with an Almost Linear Update Time"
 date:   2021-11-30 11:30:08 +0800
-categories: reachability
+categories: alg
 ---
 
 在读的文章
