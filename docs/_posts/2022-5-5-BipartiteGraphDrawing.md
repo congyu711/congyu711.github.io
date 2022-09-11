@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bipartite Graph Drawing Problem"
-date:   2022-7-16 14:30:08 +0800
+date:   2022-9-11 12:30:08 +0800
 categories: alg
 ---
 
@@ -41,7 +41,7 @@ categories: alg
 我目前想:
 
 1. 读一下[Convergence of Local Search](https://www.sstich.ch/files/Stich12-trash12.pdf)如果可以收敛到最优解当然很好(保持一次操作仍然是多项式时间内但是操作次数是指数的) -- 根本想不出
-2. 把限制变宽，但是仍保持一侧的OPT在多项式时间内可解，不容易掉到局部最优解当中去 -- 还在想
+2. 把限制变宽，但是仍保持一侧的OPT在多项式时间内可解，不容易掉到局部最优解当中去 -- 还在想（x）
 3. 观察到样例的平均度数都很小
 
 ### 3 one side local search
@@ -82,3 +82,22 @@ categories: alg
 (又过了一段时间)
 
 今日想到了一种把两侧点合起来连成新的图，比如$\sqrt{n}$个点一组合成一个大点，然后在做一次原来的local search 来进行扰乱，通过合适的分组可能能把两边必须同时移动的情况解决一部分，发现效果并不好，需要同时移动两侧的点的情况目前还是在靠局部搜索走不动之后的随机扰乱解决，如果想获得比[dpls](http://scis.scichina.com/cn/2021/SSI-2019-0122.pdf)更好的结果，我觉得一定需要想出一点解决两侧点必须同时移动的情况的办法
+
+
+## 9/10
+
+[Layered graph drawing](https://en.wikipedia.org/wiki/Layered_graph_drawing)
+>However, graphs often contain cycles, minimizing the number of inconsistently-oriented edges is NP-hard, and minimizing the number of crossings is also NP-hard
+
+[Upward planar drawing](https://en.wikipedia.org/wiki/Upward_planar_drawing)
+
+#### 固定一侧的最优解是否是NP-Hard
+
+得知了固定一侧的这个问题叫做 OSCM(one sided crossing minimization)，有文章证明了它确实是NP-Hard
+[One Sided Crossing Minimization Is NP-Hard for Sparse Graphs](https://link.springer.com/content/pdf/10.1007/3-540-45848-4_10.pdf)
+
+[dense graph](https://link.springer.com/article/10.1007/BF01187020)
+
+对于两侧都可以移动的情况的证明在这里[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)
+
+大概看了一下sparse graph那个证明，感觉难度远高于[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)，目前有别的事做，对这个证明没有那么感兴趣了，有时间再看
