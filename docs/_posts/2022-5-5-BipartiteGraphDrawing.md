@@ -101,3 +101,19 @@ categories: alg
 对于两侧都可以移动的情况的证明在这里[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)
 
 大概看了一下sparse graph那个证明，感觉难度远高于[Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf](https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf)，目前有别的事做，对这个证明没有那么感兴趣了，有时间再看
+
+#### FTP alg for OSCM
+
+[Fixed Parameter Algorithms for one-sided crossing minimization Revisited](https://www.sciencedirect.com/science/article/pii/S1570866707000469)
+
+文章 section3 给出了一个很有意思的看法和问题：
+
+首先，讨论的是OSCM问题，V1 排序固定，讨论的点都在V2中，如果有两个点$a,b\in V_2$，并且a在V1中的邻居最靠右的那个仍然在b最靠左的邻居的左边，这说明如果我在V2中把a放在b的左边一定不会出现交叉边，而b放在a的左边会出现交叉边。这可以确定一个V2中的点的偏序。
+
+k-WCO(k weighted completion of an ordering):
+a digraph P(V,A), a cost function $c: A(D([U(P)]^c))\rightarrow \mathbb{N^+}$ （这个得解释以下，c的定义域是：P这个有向图首先忽略边的方向，变成一个无向图，然后取这个无向图的补，然后每个无向边都改成双向的有向边，最后这个图的边集就是c的定义域）,a para k.
+
+Question: is there a edge set $A'\subset A(D([U(P)]^c))$ s.t. the transitive closure of $A(P) \cup A'$ is a linear order and $\sum_{a\in TC(A'\cup A(P))} c(a) \leq k$
+
+显然这个函数c如果把P中已经存在的边都设置为0，P中没有的边(a,b)设置成a放在b左边的交叉边数，这个问题就是k-OSCM，不过既然OSCM是NP-Hard，这个WCO就是NP-Complete
+
