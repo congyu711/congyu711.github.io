@@ -63,9 +63,8 @@ $$
 $$
 \begin{aligned}
     &\sum_{i=1}^n \int_{-1}^1 P(x_i\in[a+y,a+da+y])k(a) \\
-    =& \sum_{i=1}^n \int_{-1}^1(F(y+a+da)-F(y+a))k(a)\\
-    =& \sum_{i=1}^n \int_{-1}^1(\int_{y+a}^{y+a+da}\frac{1}{m}\sum_{j=1}^m k(x_j-t))k(a)\\
-    =& \sum_{i=1}^n \int_{-1}^1(\frac{1}{m}\sum_{j=1}^m \int_{y+a}^{y+a+da}k(x_j-t))k(a)\\
+    =& \sum_{i=1}^n \int_{-1}^1f(y+a)k(a)\\
+    =& \sum_{i=1}^n \int_{-1}^1(\frac{1}{m}\sum_{j=1}^m k(x_j-y-a))k(a)\\
 \end{aligned}
 $$
 
