@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Autoregressive (AR) Process - Weakly Stationarity"
+title:  "Autoregressive Process & Weakly Stationarity"
 date:   2022-10-18 0:00:00 +0800
 categories: econometrics
 ---
