@@ -20,26 +20,62 @@ categories: econometrics
 
 [特征方程有重根的线性齐次递推式的通项形式“证明”](https://www.zhihu.com/question/516043073)
 
-[充分条件不会证明](https://www.zhihu.com/question/22385598/answer/297245327)
+[充分和必要条件](https://www.zhihu.com/question/22385598/answer/297245327)
+> 充分条件的证明：（sxy） 考虑$|\alpha|>1$ 的多项式，证明前后两项的模长不相同->前后两项不相等->$|\alpha|>1$ 没有根
+> 必要条件：（qhj） 构造多项式$\Pi (1-x_i)$,韦达定理凑一下
 
 ## Weakly Stationarity
 
 The process $\{X_t, t \in T\}$ is said to be weakly stationary (or covariance
-stationary or second-order stationary) if: $E(X^2_
-t ) < \inf$ and both $EX_t$
+stationary or second-order stationary) if: $E(X^2_t ) < \inf$ and both $EX_t$
 and $Cov(X_t, X_{t+h})$, for any integer $h$, do not depend on $t$.
 
 ## Differencial & Difference?
 
-在差分方程中一些比较难以理解的东西（比如 AR process 常见的lag operator）在微分方程中都能找到相对容易理解的对应？我尝试一下用微分方程理解差分方程。
-
 [links-between-difference-and-differential-equations](https://math.stackexchange.com/questions/145523/links-between-difference-and-differential-equations)
 
-### characteristic equation
 
-### solution format
+## AR(p) Weakly Stationarity
 
+$$
+\begin{aligned}
+    y_t=\phi_0 +\phi_1y_{t-1}+&\ldots+\phi_p y_{t-p}+\epsilon_t\\
+    (1-\phi_1L-\phi_2L^2-\ldots-\phi_p L^p)y_t&=\phi_0+\epsilon_t\\
+\end{aligned}
+$$
 
+1.
+$$
+    [(1-L/x_1)(1-L/x_2)\ldots(1-L/x_p)]y_t=\phi_0+\epsilon_t\\
+$$
+
+2.
+$$
+    [1-(\phi_1-\phi_2L-\ldots-\phi_pL^{p-1})L]y_t=\phi_0+\epsilon_t\\
+$$
+
+*$L$是lag-operator*
+
+对于1，如果$(1-L/x_1), (1-L/x_2)\ldots$ 都可逆(也就是都能写成$(1+x_1L+x_1^2L^2+\ldots)(1+x_2L+x_2^2L^2+\ldots)\ldots(1+x_pL+x_p^2L^2+\ldots) \epsilon_t$
+)，
+就能轻松将一个AR(p)转化成一个MA(inf)；对于2，如果$1-(\phi_1-\phi_2L-\ldots)L$可逆也可以转化成MA(inf)
+
+对于MA(inf)，期望$E(y_t)=\mu$,方差$Var(y_t)=\sigma^2 \sum_{j=0}^{\inf}\theta_j^2$, 需要让方差收敛.
+
+对于1, 考虑$\epsilon_{t-i}$前面的系数, $\epsilon_{t-i}$需要在前面的p个括号中每个括号选择一项，我们尝试写出几项：
+
+$$
+\begin{aligned}
+    i=1 \quad & \sum x_i\\
+    i=2 \quad & \sum x_i^2+\sum_{i<j} x_i x_j\\
+    i=3 \quad & \sum x_i^3+\sum_{i<j} x_i^2 x_j+\sum_{i<j} x_i x_j^2+\sum_{i<j<k} x_i x_j x_k\\
+    \ldots
+\end{aligned}
+$$
+
+**Time Series Analysis** James D. Hamilton page35，用另外一种方法推出上面的系数
+
+哎，放弃了，James Hamilton 说可以轻松证明上面的系数是绝对收敛的，我想了好久也无法证明出来。。。以后有时间再说吧
 
 ## Questions？
 
