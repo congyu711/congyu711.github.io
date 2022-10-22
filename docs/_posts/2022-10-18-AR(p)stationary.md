@@ -26,9 +26,9 @@ categories: econometrics
 
 ## Weakly Stationarity
 
-The process $\{X_t, t \in T\}$ is said to be weakly stationary (or covariance
-stationary or second-order stationary) if: $E(X^2_t ) < \inf$ and both $EX_t$
-and $Cov(X_t, X_{t+h})$, for any integer $h$, do not depend on $t$.
+The process $\\{X_t, t \in T\\}$ is said to be weakly stationary (or covariance
+stationary or second-order stationary) if $E(X_t^2 ) < \infty$ and both $EX_t$ and $Cov(X_t, X_{t+h})$, 
+for any integer $h$, do not depend on $t$.
 
 ## Differencial & Difference?
 
@@ -44,12 +44,10 @@ $$
 \end{aligned}
 $$
 
-1.
 $$
     [(1-L/x_1)(1-L/x_2)\ldots(1-L/x_p)]y_t=\phi_0+\epsilon_t\\
 $$
 
-2.
 $$
     [1-(\phi_1-\phi_2L-\ldots-\phi_pL^{p-1})L]y_t=\phi_0+\epsilon_t\\
 $$
