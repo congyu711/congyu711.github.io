@@ -4,7 +4,6 @@ title:  "Autoregressive Process & Weakly Stationarity"
 date:   2022-10-18 0:00:00 +0800
 categories: econometrics
 ---
-# UNFINISHED
 
 > 2022 计量2 课程内容
 
@@ -21,7 +20,7 @@ categories: econometrics
 [特征方程有重根的线性齐次递推式的通项形式“证明”](https://www.zhihu.com/question/516043073)
 
 [充分和必要条件](https://www.zhihu.com/question/22385598/answer/297245327)
-> 充分条件的证明：（sxy） 考虑$|\alpha|>1$ 的多项式，证明前后两项的模长不相同->前后两项不相等->$|\alpha|>1$ 没有根
+> 充分条件的证明：（sxy） 考虑$|\alpha|>1$ 的多项式，证明前后两项的模长不相同->前后两项不相等->$|\alpha|>1$ 没有根\\
 > 必要条件：（qhj） 构造多项式$\Pi (1-x_i)$,韦达定理凑一下
 
 ## Weakly Stationarity
@@ -49,7 +48,7 @@ $$
 $$
 
 $$
-    [1-(\phi_1-\phi_2L-\ldots-\phi_pL^{p-1})L]y_t=\phi_0+\epsilon_t\\
+    [1-(\phi_1+\phi_2L+\ldots+\phi_pL^{p-1})L]y_t=\phi_0+\epsilon_t\\
 $$
 
 *$L$是lag-operator*
@@ -71,9 +70,41 @@ $$
 \end{aligned}
 $$
 
-**Time Series Analysis** James D. Hamilton page35，用另外一种方法推出上面的系数
+[**Time Series Analysis** James D. Hamilton](http://mayoral.iae-csic.org/timeseries2021/hamilton.pdf) page35，用另外一种方法推出上面的系数
 
-哎，放弃了，James Hamilton 说可以轻松证明上面的系数是绝对收敛的，我想了好久也无法证明出来。。。以后有时间再说吧
+**Time Series Analysis** James D. Hamilton page35 [2.4.13] 这种系数的写法可以较为容易的证明出系数是绝对收敛的，而用上面列出的形式较为困难（我不会）
+
+![2.4.13]({{url}}/assets/image/../../../../assets/image/ar_stationary/2.4.13.jpg)
+
+![2.4.13]({{url}}/assets/image/../../../../assets/image/ar_stationary/c.jpg)
+
+> 这里 c 的计算本身也非常有趣，见书35页左右
+
+再考虑2，首先记得[充分和必要条件](https://www.zhihu.com/question/22385598/answer/297245327)当中的必要条件是系数和小于1，而2的这个形式
+$1-(\phi_1-\phi_2L-\ldots-\phi_pL^{p-1})L$如果想要可逆，自然有$\sum_{i=1}^p \phi_i<1$
+
+那么可以写成：
+
+$$
+y_t=\phi_0/(1-\phi_1-\ldots-\phi_p)+\\
+[1+(\phi_1L+\ldots+\phi_pL^p)+(\phi_1L+\ldots+\phi_pL^p)^2+\ldots]\epsilon_t
+$$
+
+然后尝试写出$\epsilon_{t-i}$的系数
+
+$$
+\begin{aligned}
+    i=0 \quad & 1\\
+    i=1 \quad & \phi_1\\
+    i=2 \quad & \phi_1^2+\phi_2\\
+    \ldots
+\end{aligned}
+$$
+
+和1的系数比较，$i=1$时$\sum x_i=\phi_1$(韦达定理，$x_i$是特征方程根的倒数)；
+$i=2$时，$\sum x_i^2+\sum_{i<j} x_i x_j=\phi_1^2+\phi_2$ (这里$\sum x_i^2 = \phi_1^2+2\phi_2,\quad \sum_{i<j} x_i x_j=-\phi_2$)
+
+可以发现这两种方法实际上是等价的
 
 ## Questions？
 
