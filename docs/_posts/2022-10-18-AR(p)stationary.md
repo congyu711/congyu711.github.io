@@ -54,7 +54,7 @@ $$
 
 *$L$是lag-operator*
 
-对于1，如果$(1-L/x_1), (1-L/x_2)\ldots$ 都可逆(也就是都能写成$(1+x_1L+x_1^2L^2+\ldots)(1+x_2L+x_2^2L^2+\ldots)\ldots(1+x_pL+x_p^2L^2+\ldots) \epsilon_t$
+对于1，如果$(1-Lx_1), (1-Lx_2)\ldots$ 都可逆(也就是都能写成$(1+x_1L+x_1^2L^2+\ldots)(1+x_2L+x_2^2L^2+\ldots)\ldots(1+x_pL+x_p^2L^2+\ldots) \epsilon_t$
 )，
 就能轻松将一个AR(p)转化成一个MA(inf)；对于2，如果$1-(\phi_1-\phi_2L-\ldots)L$可逆也可以转化成MA(inf)
 
