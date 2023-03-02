@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "bipartite perfect matching"
+title:  "Hall's Theorem"
 date:   2023-03-02 0:00:00 +0800
 categories: alg
 ---
@@ -39,3 +39,7 @@ proofs from the book 上这章竟然有一道课后题
 
 把题目中描述的这种二分图叫做$G_n^k$, 唯一需要证明的就是$G_n^k$ 存在一个perfect matching使得所有匹配边都删掉之后图变成一个$G_n^{k-1}$ 。 问题在于图右侧有一些点度数=k, 也就是我们需要证明存在一个 perfect matching 包含所有右侧的度数等于$k$的顶点.
 
+如果二分图是 k-regular(所有顶点的度数都是k) 那么这个问题也很好解决。。删除一个 perfect matching, 所有点的度数都会-1，变成$G_n^{k-1}$. Prove by induction on $k$. 
+([exercise12](https://www.ams.jhu.edu/~abasu9/AMS_550-472-672/HW-5-sol.pdf))
+
+但是我们可以在二分图的左侧加上顶点，并且向右侧度数小于k的点连边，把图变成一个 k-regular bipartite graph. 唯一的变化就是我们的到的k个 element distinct SDR 全都比我们想要的更长，在SDR中把新加入的点对应的元素删掉就行了
