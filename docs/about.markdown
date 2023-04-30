@@ -9,4 +9,5 @@ permalink: /about/
 
 1. undergraduate at UESTC
 2. email: sxlxcsxlxc@gmail.com
-3. some notes on [bilibili.com](https://space.bilibili.com/321766296/article)
+
+这个网站本来是为了方便的看一些用markdown写的笔记之类的东西, 发现 hackmd.io 更好用, 停更啦
