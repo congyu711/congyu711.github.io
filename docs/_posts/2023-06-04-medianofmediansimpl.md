@@ -118,4 +118,4 @@ _GLIBCXX_MOVE std::move, 所有的临时变量都用右值引用存起来, 少�
 
 我好慢...
 
-![](https://hackmd.io/_uploads/HkVlbhtI3.png)
+![]({{url}}/assets/image/medianofmedians/2wMZ6VJm_E6787SGdwsQh_mMUOU.png)
