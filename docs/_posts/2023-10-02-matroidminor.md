@@ -41,3 +41,5 @@ suppose set $X$ has two maximal independent sets $T_1,T_2$ with the same size an
 
 用中文描述一下为啥 contraction 相当于在 dual matroid 上对同一个集合做 deletion 然后再取 dual. 原来的 matroid 是 $M$, $M'=M/X$. 对于任意一个 $M$ 的 base $T$, 都有一个 cobase $T^* $. $T^* - X$ 得到的 matroid 的 base 是什么? 是 $\|T^* \cap X\|$ 最小的 $T^* $. 也就是对应的 $T\cap X$ 最大. 这样一来 contraction 之后的对偶得到的 matroid 的 base 就是 $\min \|T- X\|$ 再删掉所有 $X$ 中的元素. 
 
+### they are still matroids
+
