@@ -24,6 +24,8 @@ graphic: $n(n-1)/2$ (Karger's random global min cut algorithm)
 
 ## minor
 
+<https://en.wikipedia.org/wiki/Matroid_minor>
+
 > ![Fun2022 all your bases are belong to us]({{url}}/assets/image/matroidminor/fun2022minordef.jpg)
 > Fun2022 all your bases are belong to us
 
