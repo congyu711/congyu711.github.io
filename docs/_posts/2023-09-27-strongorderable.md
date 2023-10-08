@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "determin storng orderable matroid"
+title:  "determine storng orderable matroid"
 date:   2023-09-27 0:00:00 +0800
 categories: matroid
 ---
 
+
+[![img]({{url}}/assets/image/../../../../assets/image/SBO/definition.jpg)](https://en.wikipedia.org/wiki/Base-orderable_matroid)
 
 <!-- $\mathcal M=(E,\mathcal F),n=|E|$, rank $r$
 
@@ -34,7 +36,7 @@ also see [wikipedia](https://en.wikipedia.org/wiki/Base-orderable_matroid#:~:tex
 
 <https://arxiv.org/abs/1507.05521>
 
-an induction on base orderablity.
+an induction on the size of the set $X$
 
 - 1-BO
 - 2-BO
@@ -43,3 +45,4 @@ an induction on base orderablity.
 
 given 2 bases of a matroid and a k-BO bijection f, find subsets with k+1 elements which do satisfy $k+1$-BO?
 
+1-BO -> 2-BO is already hard...
