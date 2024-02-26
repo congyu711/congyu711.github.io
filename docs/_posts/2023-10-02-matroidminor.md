@@ -1,5 +1,6 @@
 ---
 layout: post
+author: congyu
 title:  "Matroid Minor"
 date:   2023-10-02 0:00:00 +0800
 categories: matroid
