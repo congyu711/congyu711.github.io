@@ -16,3 +16,5 @@ some of my slides and notes
 [isotonic_regression_and_flow.pdf]({{url}}/assets/pdf/slides_isotonic_regression_and_flow.pdf)
 
 ### notes
+
+[hackmd.io algorithms for search&selection in sorted matrix](https://hackmd.io/2z6FC81SQo2Ujp81pmKdFg?view)
