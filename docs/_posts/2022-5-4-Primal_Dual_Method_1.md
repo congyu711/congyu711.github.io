@@ -44,7 +44,7 @@ $$
 
 primal dual方法首先有一个对偶问题的可行解$y$，如果能找到一个原问题的可行解$x$满足互补松弛条件，
 那么$x$和$y$就是原问题和对偶问题的最优解，但是$y$如果并非最优解，就找不到可行解$x$满足互补松弛条件。于是希望
-引入一个新问题，最小化原问题可行解$x$对互补松弛条件的违反。首先引入下标集$I= \\{ i|y_i=0 \\} ,J= \\{j |A^jy=c \\}$，其中
+引入一个新问题，最小化原问题可行解$x$对互补松弛条件的违反。首先引入下标集$I= \{ i|y_i=0 \} ,J= \{j |A^jy=c \}$，其中
 $A_i$表示$A$的第$i$行，$A^j$表示$A$的第$j$列（写成行向量），下面是restricted primal problems:
 
 $$
@@ -71,20 +71,19 @@ $$
     y'_i&\geq -1 \qquad i\notin I\\
     y'_i&\geq 0  \qquad i\in I
 \end{align*}
-
 $$
 
 ***
 
 这里得说说拉格朗日函数，kkt，线性规划对偶的关系，考虑一个线性规划问题:
 
-$$
+
 \begin{align*}
     \min \quad &c^Tx\\
     s.t. \quad Ax&\geq b\\
      x&\geq 0
 \end{align*}
-$$
+
 
 把他当成一个约束优化问题，写出拉格朗日函数：
 
@@ -136,7 +135,7 @@ restricted primal:
 
 ![rp]({{url}}/assets/image/primal-dual/rp.png)
 
-$I=\emptyset,J=\\{(a,b)\in E: u_a+v_b=c_{ab}\\}$
+$I=\emptyset,J=\{(a,b)\in E: u_a+v_b=c_{ab}\}$
 
 实际上可以证明restricted primal的基本可行解中的变量只能取0，1.
 发现这是在求$G=(A,B,J)$上的最大匹配。
@@ -178,9 +177,9 @@ $$
 \end{align*}
 $$
 
-$\delta(S)$是把$V$分成$S,V-S$的一个割，$f(S):2^{\|V\|}\rightarrow \mathbf{N}$
+$\delta(S)$是把$V$分成$S,V-S$的一个割，$f(S):2^{|V|}\rightarrow \mathbf{N}$
 
-书中是以hitting set problem 为例讲解的design rules，如果$f(S):2^{\|V\|}\rightarrow \\{0,1\\}$，那么这就是hitting set problem了
+书中是以hitting set problem 为例讲解的design rules，如果$f(S):2^{|V|}\rightarrow \{0,1\}$，那么这就是hitting set problem了
 
 ***
 hitting set problem:
@@ -197,7 +196,7 @@ hitting set problem 既然是 NP-Complete 问题，很多常见问题都能建�
 $f(S)=1$的那些割$\delta(S)$。
 
 方便起见定义一些符号：
-* $A=\\{e:x_e=1\\}$
+* $A=\{e:x_e=1\}$
 * $y$: dual variable
 * $T_1,\ldots,T_p$ sets to be hit
 
@@ -208,7 +207,7 @@ slackness conditions relax dual CSCs 的方法，
 2. $A\rightarrow \emptyset$
 3. While $\exists k$ : $A\cap T_k=\emptyset$
 4. $\quad$Increase $y_k$ until $\exists e\in T_k : \sum_{i:e\in T_i} y_i=c_e$
-5. $\quad$ $A\rightarrow A\cup \\{e\\}$
+5. $\quad$ $A\rightarrow A\cup \{e\}$
 
 首先在```3```中，如何选择$T_k$,如果存在多个$T_k$怎么选？
 
@@ -232,14 +231,14 @@ $$
 
 (2th -> 3th line: exchanging the two summations)
 
-令$\alpha=\max\\{\|A\cap T_i\|\\}$，根据$\sum y_i\leq OPT$容易得到
+令$\alpha=\max\{|A\cap T_i|\}$，根据$\sum y_i\leq OPT$容易得到
 
 $$
 c(A)\leq \alpha OPT
 $$
 
 这种计算近似比的方法必须要得到A之后才能算出$\alpha$，有些不便，引入一个 minimal augmentation set $B$.（$B$是$A$加上极少数量的边从而成为一个可行解，从$B$中去掉任何一条边都不是可行解）
-由于design rules中最后删边的过程，$\|A_f\cap T_i\|\leq \|B\cap T_i\|$（$A_f$是最终结果），那么对于任意当前解$A$，我们找出对应的$B$，分析最大的$\|B\cap T_i\|$（记为$\beta$），
+由于design rules中最后删边的过程，$|A_f\cap T_i|\leq |B\cap T_i|$（$A_f$是最终结果），那么对于任意当前解$A$，我们找出对应的$B$，分析最大的$|B\cap T_i|$（记为$\beta$），
 $c(A)\leq \beta OPT$。尽管minimal augmentation set听起来很复杂，这样可以在算法的执行过程中分析。
 
 再考虑design rules中的violated set. 如果考虑每次取出的violated set $\mathcal{V}_j$，有
@@ -262,9 +261,9 @@ $$
 \end{align}
 $$
 
-比较$\sum_{j=1}^l(\sum_{T_i\in \mathcal{V}_j}\|A_f\cap T_i\|)\epsilon_j$ 
+比较$\sum_{j=1}^l(\sum_{T_i\in \mathcal{V}_j}|A_f\cap T_i|)\epsilon_j$ 
 
-和 $\sum_{j=1}^{l} \|\mathcal{V}_j\|\epsilon_j$，（不知为何这两个行内公式不能写到一行。。。）
+和 $\sum_{j=1}^{l} |\mathcal{V}_j|\epsilon_j$，（不知为何这两个行内公式不能写到一行。。。）
 
 if, for all $j=1,\ldots,l$,
 
@@ -306,14 +305,14 @@ design rules 并不是一定最优，只是对于某些问题这样做挺好，�
 
 后来在读 the design of approximation algorithms 中的 chap 7. 
 
-首先Theorem 7.1的定理$f=\max{\|\\{j:e_i\in S_j\\}\|}$是近似比，就是part3
+首先Theorem 7.1的定理$f=\max{|\{j:e_i\in S_j\}|}$是近似比，就是part3
 中的 evaluate the performance guarantee 部分第一个定理（参数是$\alpha$那个）
 
 对于part2中说到的近似算法放松互补松弛条件（CSC），这里又更详细的解释：
 - enforce primal CSC 意味着如果$x_i>0$，$x_i$在对偶问题里对应的不等式取等。
 - relax dual CSC 如果某个对偶变量$y_i>0$，在原问题里对应的约束不等式却未必取等。
 
-求近似比的部分中$f=\max{\|\\{j:e_i\in S_j\\}\|}=\sum_{j:e_i\in S_j}x_j$ 也就是$y_i>0$在原问题中对应的约束不等式左侧。
+求近似比的部分中$f=\max{|\{j:e_i\in S_j\}|}=\sum_{j:e_i\in S_j}x_j$ 也就是$y_i>0$在原问题中对应的约束不等式左侧。
 
 因此 relax dual CSC 保证了近似比，而 enforce primal CSC 提供了通过对偶构造原问题可行解的方法。
 

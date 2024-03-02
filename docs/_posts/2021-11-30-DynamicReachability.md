@@ -40,7 +40,7 @@ the forest is the smallest component that strictly contains w.
 ### Dynamic edge partitioning:  
   
 
-1. $H_i=\{(u,v) \in E_i\|Query(u, v, i) ∧ (¬Query(u, v, i − 1) ∨ (u, v) \notin Ei−1) \}$
+1. $H_i=\{(u,v) \in E_i | Query(u, v, i) ∧ (¬Query(u, v, i − 1) ∨ (u, v) \notin Ei−1) \}$
 2. $H_{t+1}=E_t\ \cup_{i=1}^{t}H_i$
   
 
@@ -144,7 +144,7 @@ reachability tree 要保持这样的结构：
 
 $$w\rightarrow \{w_1,w_2,...,w_j,...,w_l\}$$
 
-可以得到一个被分裂出来的SCC的大小$O(1)$和里面有哪些点$O(\|w_j\|)$。
+可以得到一个被分裂出来的SCC的大小$O(1)$和里面有哪些点$O( | w_j | )$。
 
 可以得到那些边从 intra-component 变成 inter-component.(比如被分开的SCC是$G_i$中的，那么这一步找到的改变状态的边就是$H_i$中被删除的边，根据 dynamic edge partitioning 中$H_i$的定义)
 
@@ -154,7 +154,7 @@ $\{w_1,w_2,...,w_j,...,w_l\}$中每个SCC的active链表中的点有两部分。
 
 首先第二部分的点可以在更改边的状态时直接解决，这里不讨论。
 
-第一部分的点有这样的做法。假设$\{w_1,w_2,...,w_j,...,w_l\}$中这些SCC的大小是递减的。首先构建$w_1$的active list，遍历$w$的active list中的点，把其中不属于a的都移动到其他某个$w_k$的active list中（注意分成的SCC是不可能有交集的）（这一步需要$O(\sum_{j=2}^{l}\|w_j\|)$。
+第一部分的点有这样的做法。假设$\{w_1,w_2,...,w_j,...,w_l\}$中这些SCC的大小是递减的。首先构建$w_1$的active list，遍历$w$的active list中的点，把其中不属于a的都移动到其他某个$w_k$的active list中（注意分成的SCC是不可能有交集的）（这一步需要$O(\sum_{j=2}^{l} | w_j | )$。
 
 下面文中说：
 >This makes a huge difference! If a vertex is moved from one active list to another, the size of the component containing it must have decreased by a factor of at least 2. Each vertex is therefore moved at most $\log_2n$ times and the total amount of time spent on constructing these lists is at most O(n log n).
@@ -165,7 +165,7 @@ $\{w_1,w_2,...,w_j,...,w_l\}$中每个SCC的active链表中的点有两部分。
 
 接下来 Reconnecting the tree after edge deletions
 
->Let W be a set containing all the new components with no incoming tree edge, and all the old components that lost their incoming tree edges. (If the root r is contained in a new component, this new component is not added to W.) The set W can be easily constructed in O(\|W\|) time.
+>Let W be a set containing all the new components with no incoming tree edge, and all the old components that lost their incoming tree edges. (If the root r is contained in a new component, this new component is not added to W.) The set W can be easily constructed in O( | W | ) time.
 
 删除一些边之后，原来的reachability tree可能会变成森林。森林中的树根显然就是W中的SCC（根据定义）（也有可能是r现在所在的SCC，r原来所在的SCC因为删边被破坏了）。
 
