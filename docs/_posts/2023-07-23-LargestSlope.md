@@ -2,7 +2,7 @@
 layout: post
 title:  "finding the largest slope of segments connecting two sets of points on 2D plane"
 date:   2023-07-23 0:00:00 +0800
-categories: alg
+categories: alg computation_geometry
 ---
 
 >好长的标题啊

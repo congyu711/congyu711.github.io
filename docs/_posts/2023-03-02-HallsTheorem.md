@@ -2,7 +2,7 @@
 layout: post
 title:  "Hall's Theorem"
 date:   2023-03-02 0:00:00 +0800
-categories: alg
+categories: alg combinatorics
 ---
 
 [bipartite perfect matching](https://cs.stackexchange.com/questions/50410/perfect-matching-in-a-graph-and-complete-matching-in-bipartite-graph)

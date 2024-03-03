@@ -2,7 +2,7 @@
 layout: post
 title:  "c++ kd-tree implementations"
 date:   2023-04-01 0:00:00 +0800
-categories: alg
+categories: alg cpp
 ---
 
 勉强坚持一下月更...

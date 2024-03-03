@@ -2,7 +2,6 @@
 layout: post
 title:  "github page"
 date:   2021-11-22 11:30:08 +0800
-categories: github_page
 ---
 
 <!-- ## 配置github page -->

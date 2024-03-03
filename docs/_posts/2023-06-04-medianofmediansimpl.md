@@ -2,7 +2,7 @@
 layout: post
 title:  "median of medians & std::nth_element"
 date:   2023-6-3 0:00:00 +0800
-categories: alg
+categories: alg cpp
 ---
 
 同步[hackmd.io](https://hackmd.io/@r1NLzG2QQuKF14FgHKxugg/ry4eFqtL2)

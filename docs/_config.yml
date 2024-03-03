@@ -24,12 +24,12 @@ title: talldoor
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://talldoor.uk" # the base hostname & protocol for your site, e.g. http://example.com
-
+rss: feed.xml
 markdown: Pandoc
 # Build settings
 theme: minima
 plugins:
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-pandoc
 pandoc:
   extensions:

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>determine storng orderable matroid | talldoor</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="determine storng orderable matroid" />
+<meta name="author" content="Yu Cong" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/matroid/2023/09/27/strongorderable.html" />
+<meta property="og:url" content="http://localhost:4000/matroid/2023/09/27/strongorderable.html" />
+<meta property="og:site_name" content="talldoor" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-09-27T00:00:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="determine storng orderable matroid" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/matroid/2023/09/27/strongorderable.html"},"url":"http://localhost:4000/matroid/2023/09/27/strongorderable.html","author":{"@type":"Person","name":"Yu Cong"},"headline":"determine storng orderable matroid","dateModified":"2023-09-27T00:00:00+08:00","datePublished":"2023-09-27T00:00:00+08:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="talldoor" /><!-- Add CSS for syntax highlighting -->
+  <link rel="stylesheet" href="/assets/stylesheets/pygments.css">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="/favicon.ico" alt="talldoor"></a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/_pages/cat.html">categories</a><a class="page-link" href="/_pages/pdfs.html">slides&amp;notes</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">determine storng orderable matroid</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2023-09-27T00:00:00+08:00" itemprop="datePublished">Sep 27, 2023
+      </time></p>
+
+    <!-- <script
+      type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+          }
+        });
+      </script>
+    <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><a href="https://en.wikipedia.org/wiki/Base-orderable_matroid"><img
+src="/assets/image/../../../../assets/image/SBO/definition.jpg"
+alt="img" /></a></p>
+<!-- $\mathcal M=(E,\mathcal F),n=|E|$, rank $r$
+
+### number of optimal bases
+
+unifrom: $\binom{n}{r}$
+
+graphic: $n^{n-2}$ (Cayley's theorem, # spanning trees in complete graphs)
+
+### number of cut(or circuit?)
+
+unifrom: $\binom{n}{r+1}$
+
+graphic: $n(n-1)/2$ (Karger's random global min cut algorithm) -->
+<h1 id="determining-strong-base-orderability-of-a-matroid">Determining
+strong base-orderability of a matroid</h1>
+<p><a
+href="https://mathoverflow.net/questions/194006/determining-strong-base-orderability-of-a-matroid"
+class="uri">https://mathoverflow.net/questions/194006/determining-strong-base-orderability-of-a-matroid</a></p>
+<p>determining base-orderability of a matroid can be done through
+finding perfect matching in a bipartite graph with
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.155ex" height="3.009ex" style="vertical-align: -0.838ex;" viewBox="0 -934.9 2219.4 1295.7" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E2-MJMAIN-2225" d="M133 736Q138 750 153 750Q164 750 170 739Q172 735 172 250T170 -239Q164 -250 152 -250Q144 -250 138 -244L137 -243Q133 -241 133 -179T132 250Q132 731 133 736ZM329 739Q334 750 346 750Q353 750 361 744L362 743Q366 741 366 679T367 250T367 -178T362 -243L361 -244Q355 -250 347 -250Q335 -250 329 -239Q327 -235 327 250T329 739Z"></path>
+<path stroke-width="1" id="E2-MJMATHI-45" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path>
+<path stroke-width="1" id="E2-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E2-MJMAIN-2225" x="0" y="0"></use>
+ <use xlink:href="#E2-MJMATHI-45" x="500" y="0"></use>
+<g transform="translate(1265,0)">
+ <use xlink:href="#E2-MJMAIN-2225" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E2-MJMAIN-32" x="707" y="513"></use>
+</g>
+</g>
+</svg> edges. call oracle
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.155ex" height="3.009ex" style="vertical-align: -0.838ex;" viewBox="0 -934.9 2219.4 1295.7" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E3-MJMAIN-2225" d="M133 736Q138 750 153 750Q164 750 170 739Q172 735 172 250T170 -239Q164 -250 152 -250Q144 -250 138 -244L137 -243Q133 -241 133 -179T132 250Q132 731 133 736ZM329 739Q334 750 346 750Q353 750 361 744L362 743Q366 741 366 679T367 250T367 -178T362 -243L361 -244Q355 -250 347 -250Q335 -250 329 -239Q327 -235 327 250T329 739Z"></path>
+<path stroke-width="1" id="E3-MJMATHI-45" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path>
+<path stroke-width="1" id="E3-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E3-MJMAIN-2225" x="0" y="0"></use>
+ <use xlink:href="#E3-MJMATHI-45" x="500" y="0"></use>
+<g transform="translate(1265,0)">
+ <use xlink:href="#E3-MJMAIN-2225" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E3-MJMAIN-32" x="707" y="513"></use>
+</g>
+</g>
+</svg> times to build the graph and run a matching algorithm.</p>
+<p>Is the union of strongly base-orderable matroids strongly
+base-orderable? yes. <a
+href="https://mathoverflow.net/questions/201101/is-the-union-of-strongly-base-orderable-matroids-strongly-base-orderable"
+class="uri">https://mathoverflow.net/questions/201101/is-the-union-of-strongly-base-orderable-matroids-strongly-base-orderable</a>
+also see <a
+href="https://en.wikipedia.org/wiki/Base-orderable_matroid#:~:text=feasible%20exchange%20bijection.-,Completeness,-%5Bedit%5D">wikipedia</a></p>
+<h3
+id="difference-between-base-orderable-and-strong-base-orderable">difference
+between base-orderable and strong base orderable?</h3>
+<p><a href="https://arxiv.org/abs/1507.05521"
+class="uri">https://arxiv.org/abs/1507.05521</a></p>
+<p>an induction on the size of the set
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.98ex" height="2.176ex" style="vertical-align: -0.338ex;" viewBox="0 -791.3 852.5 936.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E4-MJMATHI-58" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E4-MJMATHI-58" x="0" y="0"></use>
+</g>
+</svg></p>
+<ul>
+<li>1-BO</li>
+<li>2-BO</li>
+<li>…</li>
+<li><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.438ex" height="2.843ex" style="vertical-align: -0.838ex;" viewBox="0 -863.1 2341.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E5-MJMAIN-2308" d="M174 734Q178 746 190 750H298H369Q400 750 411 747T422 730T411 713T372 709Q365 709 345 709T310 710H214V-235Q206 -248 196 -250Q192 -250 189 -249T184 -247T180 -244T178 -241T176 -237T174 -234V734Z"></path>
+<path stroke-width="1" id="E5-MJMATHI-72" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E5-MJMAIN-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path>
+<path stroke-width="1" id="E5-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path>
+<path stroke-width="1" id="E5-MJMAIN-2309" d="M21 717T21 730T32 746T75 750H147H256Q266 742 269 735V-235Q262 -248 251 -250Q247 -250 244 -249T239 -247T235 -244T233 -241T231 -237T229 -234V710H133Q119 710 99 710T71 709Q43 709 32 713Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E5-MJMAIN-2308" x="0" y="0"></use>
+ <use xlink:href="#E5-MJMATHI-72" x="444" y="0"></use>
+ <use xlink:href="#E5-MJMAIN-2F" x="896" y="0"></use>
+ <use xlink:href="#E5-MJMAIN-32" x="1396" y="0"></use>
+ <use xlink:href="#E5-MJMAIN-2309" x="1897" y="0"></use>
+</g>
+</svg>-BO = SBO</li>
+</ul>
+<p>given 2 bases of a matroid and a k-BO bijection f, find subsets with
+k+1 elements which do satisfy
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.214ex" height="2.343ex" style="vertical-align: -0.505ex;" viewBox="0 -791.3 2244.9 1008.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path stroke-width="1" id="E6-MJMATHI-6B" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path>
+<path stroke-width="1" id="E6-MJMAIN-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path>
+<path stroke-width="1" id="E6-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)">
+ <use xlink:href="#E6-MJMATHI-6B" x="0" y="0"></use>
+ <use xlink:href="#E6-MJMAIN-2B" x="743" y="0"></use>
+ <use xlink:href="#E6-MJMAIN-31" x="1744" y="0"></use>
+</g>
+</svg>-BO?</p>
+<p>1-BO -&gt; 2-BO is already hard…</p>
+
+  </div><a class="u-url" href="/matroid/2023/09/27/strongorderable.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">talldoor</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Yu Cong</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/congyu711"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">congyu</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>feed.xml</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p><a href="https://steamcommunity.com/profiles/76561198450041000/"><img src="/assets/image/Wooden_Door.png" alt="talldoor"></a></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
