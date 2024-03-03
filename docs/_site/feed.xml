@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-03T16:16:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">talldoor</title><subtitle></subtitle><author><name>Yu Cong</name></author><entry><title type="html">Mutually orthogonal Latin squares and projective planes and hypergraphs and matching and base packing</title><link href="http://localhost:4000/combinatorial/2024/03/01/MOLS.html" rel="alternate" type="text/html" title="Mutually orthogonal Latin squares and projective planes and hypergraphs and matching and base packing" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>http://localhost:4000/combinatorial/2024/03/01/MOLS</id><content type="html" xml:base="http://localhost:4000/combinatorial/2024/03/01/MOLS.html">&lt;p&gt;finally a title with lots of ‘and’&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://talldoor.uk/feed.xml" rel="self" type="application/atom+xml" /><link href="https://talldoor.uk/" rel="alternate" type="text/html" /><updated>2024-03-03T18:39:19+08:00</updated><id>https://talldoor.uk/feed.xml</id><title type="html">talldoor</title><subtitle></subtitle><author><name>Yu Cong</name></author><entry><title type="html">Mutually orthogonal Latin squares and projective planes and hypergraphs and matching and base packing</title><link href="https://talldoor.uk/combinatorial/2024/03/01/MOLS.html" rel="alternate" type="text/html" title="Mutually orthogonal Latin squares and projective planes and hypergraphs and matching and base packing" /><published>2024-03-01T00:00:00+08:00</published><updated>2024-03-01T00:00:00+08:00</updated><id>https://talldoor.uk/combinatorial/2024/03/01/MOLS</id><content type="html" xml:base="https://talldoor.uk/combinatorial/2024/03/01/MOLS.html">&lt;p&gt;finally a title with lots of ‘and’&lt;/p&gt;
 &lt;p&gt;just wrote this for fun&lt;/p&gt;
 &lt;h3 id=&quot;projective-plane&quot;&gt;projective plane&lt;/h3&gt;
 &lt;p&gt;some results from &lt;a
@@ -1079,8 +1079,121 @@ guarantees a MOLS of size
  &lt;use xlink:href=&quot;#E75-MJMAIN-31&quot; x=&quot;1823&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
 &lt;/g&gt;
 &lt;/svg&gt;.&lt;/li&gt;
-&lt;li&gt;MOLS =&amp;gt; projective plane.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>congyu</name></author><category term="combinatorial" /><summary type="html">finally a title with lots of ‘and’</summary></entry><entry><title type="html">Matroid Minor</title><link href="http://localhost:4000/matroid/2023/10/02/matroidminor.html" rel="alternate" type="text/html" title="Matroid Minor" /><published>2023-10-02T00:00:00+08:00</published><updated>2023-10-02T00:00:00+08:00</updated><id>http://localhost:4000/matroid/2023/10/02/matroidminor</id><content type="html" xml:base="http://localhost:4000/matroid/2023/10/02/matroidminor.html">&lt;h2 id=&quot;interesting-facts&quot;&gt;interesting facts&lt;/h2&gt;
+&lt;li&gt;MOLS =&amp;gt; projective plane. Juse the inverse of the previous
+construction. Not hard to see the resulting structure is an order
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;1.395ex&quot; height=&quot;1.676ex&quot; style=&quot;vertical-align: -0.338ex;&quot; viewBox=&quot;0 -576.1 600.5 721.6&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E76-MJMATHI-6E&quot; d=&quot;M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+ &lt;use xlink:href=&quot;#E76-MJMATHI-6E&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/svg&gt; projective plane.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;truncated-projective-plane&quot;&gt;truncated projective plane&lt;/h3&gt;
+&lt;p&gt;Truncated projective plane is just a projective plane removing one
+point and all lines incident with that point.&lt;/p&gt;
+&lt;p&gt;The interesting property is that if considered as hypergraphs
+truncated projective plane of order
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;1.049ex&quot; height=&quot;1.676ex&quot; style=&quot;vertical-align: -0.338ex;&quot; viewBox=&quot;0 -576.1 451.5 721.6&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E77-MJMATHI-72&quot; d=&quot;M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+ &lt;use xlink:href=&quot;#E77-MJMATHI-72&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/svg&gt; is an
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;5.052ex&quot; height=&quot;2.343ex&quot; style=&quot;vertical-align: -0.505ex;&quot; viewBox=&quot;0 -791.3 2174.9 1008.6&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E78-MJMATHI-72&quot; d=&quot;M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E78-MJMAIN-2B&quot; d=&quot;M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E78-MJMAIN-31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+ &lt;use xlink:href=&quot;#E78-MJMATHI-72&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E78-MJMAIN-2B&quot; x=&quot;673&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E78-MJMAIN-31&quot; x=&quot;1674&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/svg&gt;-partite hypergraph and each line intersects with every other
+lines.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;proof&lt;/strong&gt;: The
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;5.052ex&quot; height=&quot;2.343ex&quot; style=&quot;vertical-align: -0.505ex;&quot; viewBox=&quot;0 -791.3 2174.9 1008.6&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E79-MJMATHI-72&quot; d=&quot;M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E79-MJMAIN-2B&quot; d=&quot;M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E79-MJMAIN-31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+ &lt;use xlink:href=&quot;#E79-MJMATHI-72&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E79-MJMAIN-2B&quot; x=&quot;673&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E79-MJMAIN-31&quot; x=&quot;1674&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/svg&gt;-partites are exactly those sets of vertices on the deleted edges.
+They are disjoint since otherwise there will be two edges contains two
+common vertices. One can see that if one edge contains two vertices in
+the same part, this edge should be exactly the edge contains all
+vertices in this part and thus it should have been deleted. So no edge
+contains more than 1 vertex in one part.&lt;/p&gt;
+&lt;p&gt;The min vertex cover is
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;5.052ex&quot; height=&quot;2.343ex&quot; style=&quot;vertical-align: -0.505ex;&quot; viewBox=&quot;0 -791.3 2174.9 1008.6&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E80-MJMATHI-72&quot; d=&quot;M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E80-MJMAIN-2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E80-MJMAIN-31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+ &lt;use xlink:href=&quot;#E80-MJMATHI-72&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E80-MJMAIN-2212&quot; x=&quot;673&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E80-MJMAIN-31&quot; x=&quot;1674&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/svg&gt; since all vertices in one partite are needed.&lt;/p&gt;
+&lt;p&gt;The fractional matching(hitting set) = fractional vertex cover(edge
+packing) =
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;5.052ex&quot; height=&quot;2.343ex&quot; style=&quot;vertical-align: -0.505ex;&quot; viewBox=&quot;0 -791.3 2174.9 1008.6&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E81-MJMATHI-72&quot; d=&quot;M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E81-MJMAIN-2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E81-MJMAIN-31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+ &lt;use xlink:href=&quot;#E81-MJMATHI-72&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E81-MJMAIN-2212&quot; x=&quot;673&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use xlink:href=&quot;#E81-MJMAIN-31&quot; x=&quot;1674&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/svg&gt; if we assign
+&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;3.678ex&quot; height=&quot;3.676ex&quot; style=&quot;vertical-align: -1.338ex;&quot; viewBox=&quot;0 -1006.6 1583.6 1582.7&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;defs&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E82-MJMAIN-31&quot; d=&quot;M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E82-MJMATHI-72&quot; d=&quot;M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z&quot;&gt;&lt;/path&gt;
+&lt;path stroke-width=&quot;1&quot; id=&quot;E82-MJMAIN-2212&quot; d=&quot;M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z&quot;&gt;&lt;/path&gt;
+&lt;/defs&gt;
+&lt;g stroke=&quot;currentColor&quot; fill=&quot;currentColor&quot; stroke-width=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 0)&quot;&gt;
+&lt;g transform=&quot;translate(120,0)&quot;&gt;
+&lt;rect stroke=&quot;none&quot; width=&quot;1343&quot; height=&quot;60&quot; x=&quot;0&quot; y=&quot;220&quot;&gt;&lt;/rect&gt;
+ &lt;use transform=&quot;scale(0.707)&quot; xlink:href=&quot;#E82-MJMAIN-31&quot; x=&quot;699&quot; y=&quot;629&quot;&gt;&lt;/use&gt;
+&lt;g transform=&quot;translate(60,-417)&quot;&gt;
+ &lt;use transform=&quot;scale(0.707)&quot; xlink:href=&quot;#E82-MJMATHI-72&quot; x=&quot;0&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use transform=&quot;scale(0.707)&quot; xlink:href=&quot;#E82-MJMAIN-2212&quot; x=&quot;451&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+ &lt;use transform=&quot;scale(0.707)&quot; xlink:href=&quot;#E82-MJMAIN-31&quot; x=&quot;1230&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
+&lt;/g&gt;
+&lt;/g&gt;
+&lt;/g&gt;
+&lt;/svg&gt; to every hyperedge. (note: they are dual)&lt;/p&gt;
+&lt;p&gt;So for truncated projective planes the packing-cogirth gap is really
+large.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;an update plan&lt;/p&gt;
+&lt;h3 id=&quot;rysers-conjecture&quot;&gt;Ryser’s conjecture&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https://en.wikipedia.org/wiki/Ryser%27s_conjecture&lt;/li&gt;
+&lt;li&gt;https://arxiv.org/pdf/2310.19779.pdf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;… haven’t read yet&lt;/p&gt;
+&lt;h3 id=&quot;an-old-paper&quot;&gt;an old paper&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https://math.stackexchange.com/questions/3739004/why-is-the-finite-projective-plane-minus-a-single-edge-r-partite&lt;/li&gt;
+&lt;li&gt;https://link.springer.com/content/pdf/10.1007/BF02579271.pdf&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>congyu</name></author><category term="combinatorial" /><summary type="html">finally a title with lots of ‘and’</summary></entry><entry><title type="html">Matroid Minor</title><link href="https://talldoor.uk/matroid/2023/10/02/matroidminor.html" rel="alternate" type="text/html" title="Matroid Minor" /><published>2023-10-02T00:00:00+08:00</published><updated>2023-10-02T00:00:00+08:00</updated><id>https://talldoor.uk/matroid/2023/10/02/matroidminor</id><content type="html" xml:base="https://talldoor.uk/matroid/2023/10/02/matroidminor.html">&lt;h2 id=&quot;interesting-facts&quot;&gt;interesting facts&lt;/h2&gt;
 &lt;p&gt;&lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;22.062ex&quot; height=&quot;2.843ex&quot; style=&quot;vertical-align: -0.838ex;&quot; viewBox=&quot;0 -863.1 9498.9 1223.9&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 &lt;defs&gt;
 &lt;path stroke-width=&quot;1&quot; id=&quot;E2-MJCAL-4D&quot; d=&quot;M28 9Q28 37 43 63T73 90Q77 90 83 84T103 70T141 57H146Q162 57 178 79T222 167Q266 279 295 371T334 513T349 598T358 651T371 677Q397 705 432 705Q442 705 445 699T452 666Q453 661 453 659Q475 538 509 405T568 207L574 192Q581 178 587 164T594 150Q596 150 635 189T693 248Q765 324 863 438T1024 626T1089 701Q1093 705 1100 705Q1111 705 1111 682Q1111 675 1108 660T1099 611T1086 540Q1041 277 1041 144Q1041 98 1044 75T1050 48T1059 42Q1064 41 1075 46Q1102 61 1121 61Q1137 61 1137 50Q1137 28 1087 0T1000 -29Q983 -29 972 -23T955 -9T945 16T942 45T941 83V96Q941 158 952 256T974 422L985 489Q984 489 939 436T821 300T698 164Q665 128 620 85T568 37Q564 34 558 34Q550 34 546 37T535 54Q512 91 496 127T450 259T389 498L384 518Q349 367 294 223T198 15Q155 -50 117 -50Q87 -50 61 -35T30 -6Q28 2 28 9Z&quot;&gt;&lt;/path&gt;
@@ -1522,7 +1635,7 @@ set里面.&lt;/li&gt;
 &lt;li&gt;independent set exchange property 和 deletion 的情况差不多, exchange
 之后得到的集合 union T 也一定是 independent&lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>congyu</name></author><category term="matroid" /><summary type="html">interesting facts</summary></entry><entry><title type="html">determine storng orderable matroid</title><link href="http://localhost:4000/matroid/2023/09/27/strongorderable.html" rel="alternate" type="text/html" title="determine storng orderable matroid" /><published>2023-09-27T00:00:00+08:00</published><updated>2023-09-27T00:00:00+08:00</updated><id>http://localhost:4000/matroid/2023/09/27/strongorderable</id><content type="html" xml:base="http://localhost:4000/matroid/2023/09/27/strongorderable.html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Base-orderable_matroid&quot;&gt;&lt;img
+&lt;/ol&gt;</content><author><name>congyu</name></author><category term="matroid" /><summary type="html">interesting facts</summary></entry><entry><title type="html">determine storng orderable matroid</title><link href="https://talldoor.uk/matroid/2023/09/27/strongorderable.html" rel="alternate" type="text/html" title="determine storng orderable matroid" /><published>2023-09-27T00:00:00+08:00</published><updated>2023-09-27T00:00:00+08:00</updated><id>https://talldoor.uk/matroid/2023/09/27/strongorderable</id><content type="html" xml:base="https://talldoor.uk/matroid/2023/09/27/strongorderable.html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Base-orderable_matroid&quot;&gt;&lt;img
 src=&quot;/assets/image/../../../../assets/image/SBO/definition.jpg&quot;
 alt=&quot;img&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;!-- $\mathcal M=(E,\mathcal F),n=|E|$, rank $r$
@@ -1630,7 +1743,7 @@ k+1 elements which do satisfy
  &lt;use xlink:href=&quot;#E6-MJMAIN-31&quot; x=&quot;1744&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
 &lt;/g&gt;
 &lt;/svg&gt;-BO?&lt;/p&gt;
-&lt;p&gt;1-BO -&amp;gt; 2-BO is already hard…&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="matroid" /><summary type="html"></summary></entry><entry><title type="html">finding the largest slope of segments connecting two sets of points on 2D plane</title><link href="http://localhost:4000/alg/computation_geometry/2023/07/23/LargestSlope.html" rel="alternate" type="text/html" title="finding the largest slope of segments connecting two sets of points on 2D plane" /><published>2023-07-23T00:00:00+08:00</published><updated>2023-07-23T00:00:00+08:00</updated><id>http://localhost:4000/alg/computation_geometry/2023/07/23/LargestSlope</id><content type="html" xml:base="http://localhost:4000/alg/computation_geometry/2023/07/23/LargestSlope.html">&lt;blockquote&gt;
+&lt;p&gt;1-BO -&amp;gt; 2-BO is already hard…&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="matroid" /><summary type="html"></summary></entry><entry><title type="html">finding the largest slope of segments connecting two sets of points on 2D plane</title><link href="https://talldoor.uk/alg/computation_geometry/2023/07/23/LargestSlope.html" rel="alternate" type="text/html" title="finding the largest slope of segments connecting two sets of points on 2D plane" /><published>2023-07-23T00:00:00+08:00</published><updated>2023-07-23T00:00:00+08:00</updated><id>https://talldoor.uk/alg/computation_geometry/2023/07/23/LargestSlope</id><content type="html" xml:base="https://talldoor.uk/alg/computation_geometry/2023/07/23/LargestSlope.html">&lt;blockquote&gt;
 &lt;p&gt;好长的标题啊&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;二维平面上有一些点
@@ -3130,7 +3243,7 @@ alt=&quot;img&quot; /&gt;
 &lt;/g&gt;
 &lt;/svg&gt;…&lt;/p&gt;
 &lt;p&gt;然而如果你需要一个数据结构来维护平面上两组点之间连线的最大斜率,
-并且需要支持对两个点集的插入删除操作, 动态凸包的办法或许是最快的?&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="computation_geometry" /><summary type="html">好长的标题啊</summary></entry><entry><title type="html">median of medians &amp;amp; std::nth_element</title><link href="http://localhost:4000/alg/cpp/2023/06/03/medianofmediansimpl.html" rel="alternate" type="text/html" title="median of medians &amp;amp; std::nth_element" /><published>2023-06-03T00:00:00+08:00</published><updated>2023-06-03T00:00:00+08:00</updated><id>http://localhost:4000/alg/cpp/2023/06/03/medianofmediansimpl</id><content type="html" xml:base="http://localhost:4000/alg/cpp/2023/06/03/medianofmediansimpl.html">&lt;p&gt;同步&lt;a
+并且需要支持对两个点集的插入删除操作, 动态凸包的办法或许是最快的?&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="computation_geometry" /><summary type="html">好长的标题啊</summary></entry><entry><title type="html">median of medians &amp;amp; std::nth_element</title><link href="https://talldoor.uk/alg/cpp/2023/06/03/medianofmediansimpl.html" rel="alternate" type="text/html" title="median of medians &amp;amp; std::nth_element" /><published>2023-06-03T00:00:00+08:00</published><updated>2023-06-03T00:00:00+08:00</updated><id>https://talldoor.uk/alg/cpp/2023/06/03/medianofmediansimpl</id><content type="html" xml:base="https://talldoor.uk/alg/cpp/2023/06/03/medianofmediansimpl.html">&lt;p&gt;同步&lt;a
 href=&quot;https://hackmd.io/@r1NLzG2QQuKF14FgHKxugg/ry4eFqtL2&quot;&gt;hackmd.io&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;是一点 selection algorithm&lt;/p&gt;
 &lt;p&gt;支持随机查找的数组中找到第k大的元素是只需要线性时间.
@@ -3309,7 +3422,7 @@ class=&quot;sourceCode cpp&quot;&gt;&lt;code class=&quot;sourceCode cpp&quot;&gt
 少了很多复制操作&lt;/p&gt;
 &lt;p&gt;我好慢…&lt;/p&gt;
 &lt;p&gt;&lt;img
-src=&quot;/assets/image/medianofmedians/2wMZ6VJm_E6787SGdwsQh_mMUOU.png&quot; /&gt;&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="cpp" /><summary type="html">同步hackmd.io</summary></entry><entry><title type="html">Shifting Cards</title><link href="http://localhost:4000/pftb/combinatorics/2023/05/03/shiftingcards.html" rel="alternate" type="text/html" title="Shifting Cards" /><published>2023-05-03T00:00:00+08:00</published><updated>2023-05-03T00:00:00+08:00</updated><id>http://localhost:4000/pftb/combinatorics/2023/05/03/shiftingcards</id><content type="html" xml:base="http://localhost:4000/pftb/combinatorics/2023/05/03/shiftingcards.html">&lt;p&gt;&lt;a
+src=&quot;/assets/image/medianofmedians/2wMZ6VJm_E6787SGdwsQh_mMUOU.png&quot; /&gt;&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="cpp" /><summary type="html">同步hackmd.io</summary></entry><entry><title type="html">Shifting Cards</title><link href="https://talldoor.uk/pftb/combinatorics/2023/05/03/shiftingcards.html" rel="alternate" type="text/html" title="Shifting Cards" /><published>2023-05-03T00:00:00+08:00</published><updated>2023-05-03T00:00:00+08:00</updated><id>https://talldoor.uk/pftb/combinatorics/2023/05/03/shiftingcards</id><content type="html" xml:base="https://talldoor.uk/pftb/combinatorics/2023/05/03/shiftingcards.html">&lt;p&gt;&lt;a
 href=&quot;https://hackmd.io/@r1NLzG2QQuKF14FgHKxugg/r1kQ4V67n&quot;&gt;hackmd.io&lt;/a&gt;搬过来的&lt;/p&gt;
 &lt;h1 id=&quot;chapter28-shifting-cards&quot;&gt;Chapter28 Shifting Cards&lt;/h1&gt;
 &lt;p&gt;proofs from the book chap 28. 这一章讲的是各种洗牌算法, 很有意思.
@@ -4419,7 +4532,7 @@ rule. 也就是说多少次shuffle会让卡牌上的二进制串都不同?&lt;/p
 &lt;/g&gt;
  &lt;use xlink:href=&quot;#E37-MJMAIN-29&quot; x=&quot;13076&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
 &lt;/g&gt;
-&lt;/svg&gt;&lt;/p&gt;&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="PFTB" /><category term="combinatorics" /><summary type="html">hackmd.io搬过来的</summary></entry><entry><title type="html">c++ kd-tree implementations</title><link href="http://localhost:4000/alg/cpp/2023/04/01/research_on_kdtree.html" rel="alternate" type="text/html" title="c++ kd-tree implementations" /><published>2023-04-01T00:00:00+08:00</published><updated>2023-04-01T00:00:00+08:00</updated><id>http://localhost:4000/alg/cpp/2023/04/01/research_on_kdtree</id><content type="html" xml:base="http://localhost:4000/alg/cpp/2023/04/01/research_on_kdtree.html">&lt;p&gt;勉强坚持一下月更…&lt;/p&gt;
+&lt;/svg&gt;&lt;/p&gt;&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="PFTB" /><category term="combinatorics" /><summary type="html">hackmd.io搬过来的</summary></entry><entry><title type="html">c++ kd-tree implementations</title><link href="https://talldoor.uk/alg/cpp/2023/04/01/research_on_kdtree.html" rel="alternate" type="text/html" title="c++ kd-tree implementations" /><published>2023-04-01T00:00:00+08:00</published><updated>2023-04-01T00:00:00+08:00</updated><id>https://talldoor.uk/alg/cpp/2023/04/01/research_on_kdtree</id><content type="html" xml:base="https://talldoor.uk/alg/cpp/2023/04/01/research_on_kdtree.html">&lt;p&gt;勉强坚持一下月更…&lt;/p&gt;
 &lt;p&gt;操作系统作业要写一下死锁检测
 https://en.wikipedia.org/wiki/Banker’s_algorithm
 里面有一步大概是在所有进程的 required_resources 对应的向量里面找小于系统
@@ -4474,7 +4587,7 @@ issue当中已经给了一个例子.&lt;/p&gt;
 class=&quot;sourceCode cpp&quot;&gt;&lt;code class=&quot;sourceCode cpp&quot;&gt;&lt;span id=&quot;cb1-1&quot;&gt;&lt;a href=&quot;#cb1-1&quot; aria-hidden=&quot;true&quot; tabindex=&quot;-1&quot;&gt;&lt;/a&gt;    DistanceType split_val &lt;span class=&quot;op&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;(&lt;/span&gt;bbox&lt;span class=&quot;op&quot;&gt;[&lt;/span&gt;cutfeat&lt;span class=&quot;op&quot;&gt;].&lt;/span&gt;low &lt;span class=&quot;op&quot;&gt;+&lt;/span&gt; bbox&lt;span class=&quot;op&quot;&gt;[&lt;/span&gt;cutfeat&lt;span class=&quot;op&quot;&gt;].&lt;/span&gt;high&lt;span class=&quot;op&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;op&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;dv&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;op&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;貌似不能保证树是平衡的?&lt;/p&gt;
 &lt;p&gt;在看和改这些kd-tree上花费的时间感觉足够从头开始写一个了,
-最终也没有用前面两个实现改出一个我能用上的kd-tree…&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="cpp" /><summary type="html">勉强坚持一下月更…</summary></entry><entry><title type="html">Hall’s Theorem</title><link href="http://localhost:4000/alg/combinatorics/2023/03/02/HallsTheorem.html" rel="alternate" type="text/html" title="Hall’s Theorem" /><published>2023-03-02T00:00:00+08:00</published><updated>2023-03-02T00:00:00+08:00</updated><id>http://localhost:4000/alg/combinatorics/2023/03/02/HallsTheorem</id><content type="html" xml:base="http://localhost:4000/alg/combinatorics/2023/03/02/HallsTheorem.html">&lt;p&gt;&lt;a
+最终也没有用前面两个实现改出一个我能用上的kd-tree…&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="cpp" /><summary type="html">勉强坚持一下月更…</summary></entry><entry><title type="html">Hall’s Theorem</title><link href="https://talldoor.uk/alg/combinatorics/2023/03/02/HallsTheorem.html" rel="alternate" type="text/html" title="Hall’s Theorem" /><published>2023-03-02T00:00:00+08:00</published><updated>2023-03-02T00:00:00+08:00</updated><id>https://talldoor.uk/alg/combinatorics/2023/03/02/HallsTheorem</id><content type="html" xml:base="https://talldoor.uk/alg/combinatorics/2023/03/02/HallsTheorem.html">&lt;p&gt;&lt;a
 href=&quot;https://cs.stackexchange.com/questions/50410/perfect-matching-in-a-graph-and-complete-matching-in-bipartite-graph&quot;&gt;bipartite
 perfect matching&lt;/a&gt;
 指的是二分图某一侧的顶点都和匹配边相连，我之前确实以为 perfect matching
@@ -4754,7 +4867,7 @@ perfect matching
 href=&quot;https://www.ams.jhu.edu/~abasu9/AMS_550-472-672/HW-5-sol.pdf&quot;&gt;exercise12&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;但是我们可以在二分图的左侧加上顶点，并且向右侧度数小于k的点连边，把图变成一个
 k-regular bipartite graph. 唯一的变化就是我们的到的k个 element distinct
-SDR 全都比我们想要的更长，在SDR中把新加入的点对应的元素删掉就行了&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="combinatorics" /><summary type="html">bipartite perfect matching 指的是二分图某一侧的顶点都和匹配边相连，我之前确实以为 perfect matching 都是说所有顶点都和匹配边相连。</summary></entry><entry><title type="html">DAG with smallest number of vertices</title><link href="http://localhost:4000/alg/combinatorics/2023/01/26/minDAG.html" rel="alternate" type="text/html" title="DAG with smallest number of vertices" /><published>2023-01-26T00:00:00+08:00</published><updated>2023-01-26T00:00:00+08:00</updated><id>http://localhost:4000/alg/combinatorics/2023/01/26/minDAG</id><content type="html" xml:base="http://localhost:4000/alg/combinatorics/2023/01/26/minDAG.html">&lt;!-- &gt;我还没有非常仔细的想这个问题，也还没去查。这个问题可能非常简单，可能已经有人研究过这个问题了 --&gt;
+SDR 全都比我们想要的更长，在SDR中把新加入的点对应的元素删掉就行了&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="combinatorics" /><summary type="html">bipartite perfect matching 指的是二分图某一侧的顶点都和匹配边相连，我之前确实以为 perfect matching 都是说所有顶点都和匹配边相连。</summary></entry><entry><title type="html">DAG with smallest number of vertices</title><link href="https://talldoor.uk/alg/combinatorics/2023/01/26/minDAG.html" rel="alternate" type="text/html" title="DAG with smallest number of vertices" /><published>2023-01-26T00:00:00+08:00</published><updated>2023-01-26T00:00:00+08:00</updated><id>https://talldoor.uk/alg/combinatorics/2023/01/26/minDAG</id><content type="html" xml:base="https://talldoor.uk/alg/combinatorics/2023/01/26/minDAG.html">&lt;!-- &gt;我还没有非常仔细的想这个问题，也还没去查。这个问题可能非常简单，可能已经有人研究过这个问题了 --&gt;
 &lt;p&gt;过年的时候听到一个考察小朋友的问题，家族中有多少对父子多少对爷爷和孙子，问家族中人数最少有几人。&lt;/p&gt;
 &lt;p&gt;把这个问题变成，考虑一个DAG，给出DAG中长度（边的数量）为
 &lt;svg xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;1.493ex&quot; height=&quot;2.509ex&quot; style=&quot;vertical-align: -0.671ex;&quot; viewBox=&quot;0 -791.3 642.8 1080.4&quot; role=&quot;img&quot; focusable=&quot;false&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
@@ -5712,7 +5825,7 @@ href=&quot;https://www2.math.upenn.edu/~wilf/gfology2.pdf&quot;&gt;generatingfun
  &lt;use xlink:href=&quot;#E63-MJMAIN-32&quot; x=&quot;9545&quot; y=&quot;0&quot;&gt;&lt;/use&gt;
 &lt;/g&gt;
 &lt;/svg&gt;)&lt;/p&gt;
-&lt;p&gt;目前还没有想到接下来该怎么办…&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="combinatorics" /><summary type="html"></summary></entry><entry><title type="html">Notes on Laminar Matroid</title><link href="http://localhost:4000/alg/matroid/2022/12/17/LaminarMatroid.html" rel="alternate" type="text/html" title="Notes on Laminar Matroid" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>http://localhost:4000/alg/matroid/2022/12/17/LaminarMatroid</id><content type="html" xml:base="http://localhost:4000/alg/matroid/2022/12/17/LaminarMatroid.html">&lt;blockquote&gt;
+&lt;p&gt;目前还没有想到接下来该怎么办…&lt;/p&gt;</content><author><name>Yu Cong</name></author><category term="alg" /><category term="combinatorics" /><summary type="html"></summary></entry><entry><title type="html">Notes on Laminar Matroid</title><link href="https://talldoor.uk/alg/matroid/2022/12/17/LaminarMatroid.html" rel="alternate" type="text/html" title="Notes on Laminar Matroid" /><published>2022-12-17T00:00:00+08:00</published><updated>2022-12-17T00:00:00+08:00</updated><id>https://talldoor.uk/alg/matroid/2022/12/17/LaminarMatroid</id><content type="html" xml:base="https://talldoor.uk/alg/matroid/2022/12/17/LaminarMatroid.html">&lt;blockquote&gt;
 &lt;p&gt;references:&lt;/p&gt;
 &lt;p&gt;&lt;a
 href=&quot;https://cdn.vanderbilt.edu/vu-my/wp-content/uploads/sites/2392/2015/07/14141714/Tara-E-Fife.pdf&quot;&gt;https://cdn.vanderbilt.edu/vu-my/wp-content/uploads/sites/2392/2015/07/14141714/Tara-E-Fife.pdf&lt;/a&gt;&lt;/p&gt;
