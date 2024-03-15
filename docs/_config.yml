@@ -24,19 +24,19 @@ title: talldoor
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://talldoor.uk" # the base hostname & protocol for your site, e.g. http://example.com
-rss: feed.xml
+# rss: feed.xml
 markdown: Pandoc
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-pandoc
 pandoc:
   extensions:
-    - filter: mermaid-filter
+    # - filter: mermaid-filter
     - filter: mathjax-pandoc-filter
     - '-Mmathjax.centerDisplayMath' # center display math
-
+feed:
+  disable: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -59,3 +59,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - minima/
+  - _posts/notebooks

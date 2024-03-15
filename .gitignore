@@ -1,6 +1,5 @@
 # docs/_site
-docs/_posts/2021-12-25-NP-Hard.md
-docs/_posts/2021-12-17-最优化算法.md
-docs/minima
+# https://github.com/jekyll/minima/issues/562
+docs/_plugins/
 .vscode/
 .jekyll-cache/
