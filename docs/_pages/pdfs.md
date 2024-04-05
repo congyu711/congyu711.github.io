@@ -19,4 +19,4 @@ some of my slides and notes
 
 [hackmd.io algorithms for search&selection in sorted matrix](https://hackmd.io/2z6FC81SQo2Ujp81pmKdFg?view)
 
-[connections in combinatorial optimization matroid proofs]({{url}}/assets/pdf/cco_matroid_proofs.pdf)(incomplete)
+[connections in combinatorial optimization. matroid proofs](https://www.overleaf.com/read/pcbtcjpsqdmq#a678b6)(overleaf)
